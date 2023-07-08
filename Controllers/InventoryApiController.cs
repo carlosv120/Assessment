@@ -23,7 +23,7 @@
                     xmlFile.Load("inventory.xml");
 
                     // Products element
-                    XmlNode productsNode = xmlFile.SelectSingleNode("/inventory/products");
+                    XmlNode? productsNode = xmlFile.SelectSingleNode("/inventory/products");
 
                     // Reading each value
                     foreach (XmlNode productNode in productsNode.SelectNodes("product"))
