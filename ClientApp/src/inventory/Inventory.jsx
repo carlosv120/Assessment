@@ -16,9 +16,8 @@ function Inventory() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    const onGetProductsSuccess = (data) => {
-        const arrayOfProducts = data.data;
-        false && console.log(state);
+    const onGetProductsSuccess = (response) => {
+        const arrayOfProducts = response.data;
 
         //initial sorting aphabetically by name
         arrayOfProducts.sort(function (a, b) {
